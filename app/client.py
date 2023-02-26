@@ -10,13 +10,13 @@ import requests
 # print(response.json())
 
 #создать пользователя
-response = requests.post('http://127.0.0.1:5000/users', json={'username':'user_3', 'password':'45df!gKlasdx_'})
-print(response.status_code)
-print(response.json())
-
-# response = requests.get('http://127.0.0.1:5000/users/1')
+# response = requests.post('http://127.0.0.1:5000/users', json={'username':'user_1234', 'password':'45df!gKlasdx_'})
 # print(response.status_code)
 # print(response.json())
+
+response = requests.get('http://127.0.0.1:5000/users/')
+print(response.status_code)
+print(response.json())
 #
 # response = requests.patch('http://127.0.0.1:5000/users/13', json={'username':'user','password':'123'})
 # print(response.status_code)
